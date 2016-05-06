@@ -1,0 +1,43 @@
+# Lab playbook - sets up the host specific shit
+---
+  epel_rpm: "http://mirror.pnl.gov/epel/7/x86_64/e/epel-release-7-6.noarch.rpm"
+  ol7_repo_file: public-yum-ol7.repo
+  repo_dir: /etc/yum.repos.d/
+  oracle_gpg_url: "http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol7"
+  oracle_gpg_file: /etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+#  default_user: ansible
+  install_os_packages: true
+  get_oracle_gpg: true
+  configure_epel_repo: true
+  configure_public_yum_repo: true
+  configure_motd: true
+  configure_ntp: true
+
+  common_packages:
+      - screen
+      - facter
+      - procps
+      - module-init-tools
+      - ethtool
+      - bc
+      - nc
+      - bind-utils
+      - nfs-utils
+      - make
+      - sysstat
+      - unzip
+      - openssh-clients
+      - compat-libcap1
+      - collectl
+      - rlwrap
+      - tigervnc-server
+      - ntp
+      - expect
+      - git
+      - lvm2
+      - xfsprogs
+      - btrfs-progs
+      - tmux
+      - python-devel
+      - python-pip
+      - libselinux-python
