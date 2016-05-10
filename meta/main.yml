@@ -3,12 +3,7 @@ galaxy_info:
   author: Patrick Fogarty
   description: Common Oracle server setup tasks. Taken from oravirt's "oravirt/ansible-oracle" github repo. 
   company: 
-  # If the issue tracker for your role is not on github, uncomment the
-  # next line and provide a value
-  # issue_tracker_url: http://example.com/issue/tracker
-  # Some suggested licenses:
-  - BSD
-  license: license (GPLv2, CC-BY, etc)
+  license: license (BSD)
   min_ansible_version: 1.2
   platforms:
   - name: EL
